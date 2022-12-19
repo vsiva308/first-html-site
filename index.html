@@ -4,47 +4,56 @@
 
         <meta charset="UTF-8">
         <meta name="author" content="Varun Siva">
-        <meta name="description" content="A website made learning HTML">
+        <meta name="description" content="A vanilla HTML/CSS website made to learn the basics.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>Varun's Life</title>
 
-        <link rel="stylesheet" href="main.css" type="text/css">
+        <link rel="stylesheet" href="./stylesheets/main.css" type="text/css">
+        <link rel="stylesheet" href="./stylesheets/home.css" type="text/css">
+        
+        <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik+80s+Fade&display=swap" rel="stylesheet"> -->
+
         <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
         <link rel="manifest" href="favicon_io/site.webmanifest">
     </head>
     <body>
-        <div id="bg">
-            <div class="header">
-                <ul>
-                    <li><h1 class="head-name">Varun Sivasubramanian</h1></li>
-                    <li><a href="google.com">Home</a></li>
-                    <li><a href="google.com">About Me</a></li>
-                    <li><a href="google.com">Projects</a></li>
-                </ul>
+        <div class="bg">
+            <div class="navbar">
+                <img src="./images/logo.jpg" />
+                <a href="google.com">Home</a>
+                <a href="google.com">Random</a>
+                <a href="google.com">Contact</a>
             </div>
-            <div>
-                <p>
-                    Hello!
-                    I'm <abbr title="Vah-roon">Varun</abbr>, a UIUC CompE '25.
+            <div class="body">
+                <p class="intro">
+                    Hello! My name is
                 </p>
-                <p>
-                    I'm interested in exploring Cybersecurity, Cryptography, DeFi, web3, and more!
+                <p class="name">
+                    Varun Sivasubramanian
                 </p>
-                <p> Take a look at my 
-                    <a href="local">
-                        resume
-                    </a>
-                    , 
-                    <a href="https://github.com/vsiva308">
-                        Github
-                    </a>
-                    , and 
-                    <a href="https://linkedin.com/in/varun-siva-b6275b22a/">
-                        LinkedIn
-                    </a>
+                <p class="major">
+                    UIUC CompE '25
                 </p>
+                <a data-scroll href="#landing">
+                    <div class="arrow"></div>
+                </a>
+                <!-- <p>
+                    I'm interested in exploring Cybersecurity, Cryptography, DeFi, Quantitative Finance, and more!
+                </p>
+                <p> I hope you enjoy looking through my first ever website!
+                    I had a great time learning HTML/CSS and making this website purely from scratch.
+                    Feel free to see more about projects I've worked on and also learn about me as a person!
+                    If you have any questions, I am always available via email, discord, and twitter.
+                    Oh, and if you're looking for my resume, it's right 
+                    <a href="https://google.com">
+                        here.
+                    </a>
+                </p> -->
             </div>
             <div class="link-box">
                 <a class="link" href="https://google.com">
@@ -53,9 +62,22 @@
                 <a class="link" href="https://google.com">
                     <img class="logo" src="./logo/discord.png" alt="discord"></img>
                 </a>
+                <a class="link" href="https://google.com">
+                    <img class="logo" src="./logo/twitter.png" alt="twitter"></img>
+                </a>
+                <a class="link" href="https://google.com">
+                    <img class="logo" src="./logo/telegram.png" alt="telegram"></img>
+                </a>
+                <a class="link" href="https://google.com">
+                    <img class="logo" src="./logo/untapped.png" alt="untapped"></img>
+                </a>
+                <a class="link" href="https://google.com">
+                    <img class="logo" style="height: 50px;" src="./logo/triplebyte.png" alt="triplebyte"></img>
+                </a>
+
             </div>
         </div>
-        <hr>
-        <span style="color:rgb(125, 235, 235)">&bigstar;&bigstar;&bigstar; Varun Siva &bigstar;&bigstar;&bigstar;</span>
+        <hr style="margin-left:20%;margin-right:20%;">
+        <span style="color:rgb(125, 235, 235); margin-left:20%;margin-right:20%;">&bigstar;&bigstar;&bigstar; Varun Siva &bigstar;&bigstar;&bigstar;</span>
     </body>
 </html>
