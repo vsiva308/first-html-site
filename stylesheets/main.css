@@ -1,37 +1,11 @@
 p {
     color:whitesmoke;
     margin: 0;
-
 }
 
 body {
     background-color:black;
     margin: 0;
-}
-
-h1 {
-    font-size: 15px;
-    color:aliceblue;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: none;
-}
-
-li {
-    float: left;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 24px 16px;
-    text-decoration: none;
 }
 
 p a {
@@ -80,7 +54,7 @@ p a:visited {
 }
 
 .navbar a:hover {
-    background-color: rgb(160, 255, 255);
+    background-color: rgb(185, 186, 255);
     color: black;
     transition: background-color, color, 0.7s ease-in-out;
     -webkit-transition: background-color, color, 0.7s ease-in-out;

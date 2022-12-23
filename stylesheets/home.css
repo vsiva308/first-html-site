@@ -1,30 +1,95 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+80s+Fade&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
 .body {
-    align-items: center;
     flex-direction: column;
-    justify-content: center;
-    display: flex;
+    justify-items: center;
+    align-items: center;
+    display: grid;
+    grid-template-rows: 2fr repeat(3, auto) 1fr 1fr;
+    height: 100vh;
+    background-image: url("../images/batman.jpg");
+    background-size: contain;
 }
 
 .intro {
-    margin-top: 32vh;
+    font-family: 'VT323', monospace;
+    font-size: 2vw;
+    grid-row: 2;
 }
 
 .name {
-    font-family: 'Rubik 80s Fade', cursive;
-    font-size: 14vh;
+    font-family: 'VT323', monospace;
+    font-size: 8.5vw;
+    color: rgb(255, 255, 255);
+    animation: glow 2s ease-in-out infinite alternate;
+    grid-row: 3;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 5px rgb(210, 211, 255), 0 0 10px rgb(24, 25, 61), 0 0 15px rgb(12, 12, 39);
+    }
+      
+    to {
+        text-shadow: 0 0 10px rgb(210, 211, 255), 0 0 15px rgb(197, 196, 255), 
+        0 0 20px rgb(24, 24, 63);
+    }
+}
+
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 5px rgb(210, 211, 255), 0 0 10px rgb(24, 25, 61), 0 0 15px rgb(12, 12, 39);
+    }
+      
+    to {
+        text-shadow: 0 0 10px rgb(210, 211, 255), 0 0 15px rgb(197, 196, 255), 
+        0 0 20px rgb(24, 24, 63);
+    }
 }
 
 .major {
     color: orangered;
-    margin-bottom: 2vh;
+    font-size: 2.5vw;
+    font-family: 'Rubik 80s Fade', cursive;
+    grid-row: 4;
+}
+
+.icon-bar {
+    display: flex;
+    grid-row: 5;
+    align-self: end;
+    margin-bottom: 40px;
+    width: 25vw;
+    justify-content: space-evenly;
+}
+
+.icon-bar a {
+    color: white;
+}
+
+.twitter:hover {
+    color: #55ACEE;
+    transition: color, 0.3s ease-in-out;
+    -webkit-transition: color, 0.3s ease-in-out;
+}
+
+.linkedin:hover {
+    color: #007bb5;
+    transition: color, 0.3s ease-in-out;
+    -webkit-transition: color, 0.3s ease-in-out;
+}
+
+.telegram:hover {
+    color: #229ED9;
+    transition: color, 0.3s ease-in-out;
+    -webkit-transition: color, 0.3s ease-in-out;
 }
 
 .arrow {
     box-sizing: border-box;
-    height: 3vh;
-    width: 3vh;
+    height: 15px;
+    width: 15px;
     border-style: solid;
     border-color: white;
     border-width: 0px 1px 1px 0px;
@@ -33,68 +98,39 @@
 }
 
 .arrow:hover {
-    border-bottom-width: 4px;
-    border-right-width: 4px;
+    border-bottom-width: 3px;
+    border-right-width: 3px;
 }
 
-.link-box {
-    position: absolute;
-    left:20%;
-    right:20%;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.94);
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    height: 70px;
-}
-/* flexbox. flex items can have align-self: flex-start, flex-end, etc.
-also can have flex-grow/shrink and size.
-*/
+@media only screen and (max-width: 600px) { 
+    .icon-bar a {
+        font-size: 20px;
+        width: 40vw;
+    }
 
-.link {
-    width: 50px;
-    height: 50px;
+    .intro {
+        font-size: 20px;
+    }
+
+    .major {
+        font-size: 20px;
+    }
 }
 
-/* .grid-container {
-	background-color: rgb(250,250,250);
-	margin: 10px;
-	height: 500px;
-
-	display: grid;
-	grid-template-columns: auto auto auto;
-	grid-template-rows: auto auto;
-    justify-content: start, end, center, space-evenly;
-    align-content: start, end, space-between
-    grid-column-gap:
-    grid-row-gap:
+@media only screen and (min-width: 600px) {
+    .icon-bar a {
+        font-size: 25px;
+    }
 }
 
-.grid-item {
-  color: black;
-  font-size: 25px;
-  text-align: center;
-
-  width: 70px;
-  line-height: 40px;
-  margin: 10px;
-
-  grid-column: x / y; **goes from x to y column**
-  grid-row: x / y;
-} */
-
-.logo {
-    flex-basis: 50px;
-    width: 50px;
-    line-height: 50px;
-    /* flex-grow: ;
-    flex-shrink: ; */
+@media only screen and (min-width: 992px) {
+    .icon-bar a {
+        font-size: 2.5vw;
+    }
 }
 
-/* html, body{
-    margin:0 !important;
-    padding:0 !important;
-} */
+@media only screen and (min-width: 1200px) {
+    .icon-bar a {
+        font-size: 2vw;
+    }
+}
