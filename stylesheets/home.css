@@ -6,7 +6,7 @@
     justify-items: center;
     align-items: center;
     display: grid;
-    grid-template-rows: 2fr repeat(3, auto) 1fr 1fr;
+    grid-template-rows: 1.5fr repeat(3, auto) 1fr 1fr;
     height: 100vh;
     background-image: url("../images/batman.jpg");
     background-size: contain;
@@ -82,6 +82,12 @@
 
 .telegram:hover {
     color: #229ED9;
+    transition: color, 0.3s ease-in-out;
+    -webkit-transition: color, 0.3s ease-in-out;
+}
+
+.github:hover {
+    color: #4078c0;
     transition: color, 0.3s ease-in-out;
     -webkit-transition: color, 0.3s ease-in-out;
 }

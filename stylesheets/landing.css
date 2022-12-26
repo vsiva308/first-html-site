@@ -1,3 +1,44 @@
 #landing {
     height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* align-content: center; */
+    align-items: center;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.heading {
+    color:lightslategrey;
+    /* color: #A7C7E7; */
+    font-size: 5vw;
+    font-family: 'VT323', monospace;
+    margin: 0;
+    padding-bottom: 4px;
+}
+
+.about {
+    color:lightgray;
+    font-size: medium;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0 5px 3vh 5px;
+}
+
+.link-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pfp {
+    position: relative;
+    width: 12rem;
+    z-index: 10;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.profile-img {
+    width: 100%;
+    height: auto;
 }
