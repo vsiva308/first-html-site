@@ -1,11 +1,10 @@
 #landing {
     height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    /* align-content: center; */
+    grid-template-columns: 4fr 0.5fr 4fr;
     align-items: center;
-    margin-left: 10vw;
-    margin-right: 10vw;
+    justify-items: center;
+    margin: 0 10vw;
 }
 
 .heading {
@@ -24,21 +23,36 @@
     padding: 0 5px 3vh 5px;
 }
 
-.link-box {
+.pfp-box {
+    grid-column: 3;
+    width: 60%;
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* background-color: white; */
 }
 
 .pfp {
-    position: relative;
-    width: 12rem;
-    z-index: 10;
-    border-radius: 1rem;
-    overflow: hidden;
+    border-radius: 2rem;
 }
 
-.profile-img {
+.pfp-info {
+    /* padding-top: 8rem;
+    padding: 1.5rem; */
+    border-radius: 1rem;
     width: 100%;
-    height: auto;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile h2 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-align: center;
+    margin: 0;
+    color: lightgray;
 }
