@@ -12,13 +12,13 @@
         <link rel="stylesheet" href="./stylesheets/main.css" type="text/css">
         <link rel="stylesheet" href="./stylesheets/home.css" type="text/css">
         <link rel="stylesheet" href="./stylesheets/landing.css" type="text/css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
         <link rel="manifest" href="favicon_io/site.webmanifest">
 
+        <script src="https://kit.fontawesome.com/84ac807f3f.js" crossorigin="anonymous"></script>
         <script type="text/javascript" src="navbar.js"></script>
     </head>
     <body>
@@ -34,7 +34,7 @@
 
         <div class="bg">
             <div class="navbar" id="bars">
-                <img src="./images/batlogo.png" alt="batlogo"/>
+                <a href="#"><img src="./images/batlogo.png" alt="batlogo"/></a>
                 <span style="cursor:pointer;" onclick="openNav()"><i class="fa fa-bars"></i></span>
             </div>
 
@@ -46,7 +46,7 @@
                     Varun Sivasubramanian
                 </p>
                 <p class="major">
-                    UIUC CompE '24
+                    UIUC CompE '25
                 </p>
                 <div class="icon-bar">
                     <a href="https://twitter.com/VarunSiva14" class="twitter" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter"></i></a>
@@ -60,34 +60,40 @@
             </div>
 
             <div id="landing">
-                <div>
+                 <div class="pfp-box">
+                    <img src="./images/linkedinpfp.jpg" alt="profile picture" class="pfp" />
+                    <div class="pfp-info">
+                        <p class="about">Hello and welcome! My name is Varun and I'm a sophomore student developer interested in blockchain, mobile development, and computer security.</p>
+                        <p class="about">I started my journey as a developer a few years ago, where I coded Java for my high school robotics team.</p>
+                        <p class="about">Ever since, I've explored on my own and recently deep dived into developing on-chain Solana dApps with Rust and React/TS.</p>
+                        <p class="about">I spend my free time with my friends, at the gym, playing music, or playing video games. I love visiting new places and am looking forward to experiencing new things. &#x1F680;</p>
+                        <!--Links to other parts of site?-->
+                        <p class="about">Imma put some other links here when I finish up the rest of this site</p>
+                    </div>
+                    
+                    <p class="info" style="background-color: rgb(153, 41, 0)"><i class="fa-solid fa-location-dot"></i> Aurora, IL</p>
+                    <p class="info" style="grid-row: 3; background-color: rgb(0, 0, 124);"><i class="fa-solid fa-suitcase"></i> J.P. Morgan Chase</p>
+                 </div>
+            </div>
+
+            <div id="projects">
+
+            </div>
+
+             <!-- <div>
                     <h1 class="heading">Welcome</h1>
                     <p class="about">I'm a curious and passionate student developer interested in blockchain, mobile development, and computer security. I started my journey as a developer about two years ago,
                         when I helped code some Java for my high school robotics team. As time went on, I learned more and eventually began looking into the fruits of blockchain technology.
                         The past couple of months, I've been developing on-chain Solana dApps with Rust and React/Typescript. I first created a peer to peer payments 
                         app targeting users possessing little to no blockchain knowledge. This past year, I served as a team lead for my University's blockchain club where we worked on 
-                        a decentralized marketplace.
+                        a decentralized arbitration protocol.
                     </p>
                     <p class="about">I currently work part time during school as a mobile developer intern using C# and Xamarin, 
                         where I've learned to follow a MVVM standard and troubleshoot iOS/Android deployment issues.</p>
     
                     <p class="about">I spend my free time spending time with my friends, going to the gym, or playing video games. I love visiting new places and am looking forward to
                         experiencing new things &#x1F680;
-                    </p>
-                </div>
-                <div class="pfp-box">
-                    <div class="pfp">
-                        <img src="./images/logo.jpg" alt="pfp" />
-                    </div>
-                    <div class="pfp-info">
-                        <div class="profile">
-                            <h2>
-                                Varun Siva
-                            </h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                    </p> -->
         </div>
     </body>
 </html>
